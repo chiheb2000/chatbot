@@ -34,7 +34,6 @@ def _hasher(mdp):
     h = hashlib.pbkdf2_hmac("sha256", mdp.encode("utf-8"), sel, ITERATIONS)
     return f"{sel.hex()}${h.hex()}"
 
-
 def _mdp_correct(mdp, stocke):
     sel_hex, h_hex = stocke.split("$")
     h = hashlib.pbkdf2_hmac(
