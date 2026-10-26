@@ -3,3 +3,7 @@ openai
 groq
 langchain
 chromadb
+pypdf
+dotenv
+huggingface_hub
+bcrypt
